@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    overflow: hidden; 
+    border-radius: 20px 20px 0 0;
+}
+h1{
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 20px 0 20px 0;
+    color: hsl(223, 47%, 23%);
+}
+p{
+    color: hsl(224, 23%, 55%);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0 40px 0 40px;
+    line-height: 1.7rem;
+    margin-bottom: 25px;
+}
+.box{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin: 0 20px 0 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.box img{
+    width: 18%;
+}
+h2{
+    color: hsl(223, 47%, 23%);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+h3 {
+    font-size: 0.9rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.box a{
+    font-size: 0.9rem;
+}
+.textwrap{
+    margin-right: 50px;
+}
+.box a{
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: color 100ms ease-in-out;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#proceed{
+    width: 310px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    padding: 13px 0;
+    margin-top: 25px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-shadow: 0px 10px 30px -10px hsl(224, 23%, 55%);
+    transition: background-color 150ms ease-in-out;
+}
+#cancel{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: color 150ms ease-in-out;
+}
+
+/* Hover states */
+.box a:hover{
+    text-decoration: none;
+    color: hsla(212, 70%, 55%, 0.863);
+}
+#proceed:hover{
+    background-color: hsl(245, 96%, 67%);
+}
+#cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+/* media stuff */
+@media (min-width: 600px){
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+    .box{
+        margin: 0 30px 0 30px;
+    }
+    #proceed{
+        width: 290px;
+    }
+}   
